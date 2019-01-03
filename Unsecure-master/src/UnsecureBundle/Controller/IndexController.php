@@ -72,6 +72,7 @@ class IndexController extends Controller
      */
     public function subjectAction(Request $request, $subjectId)
     {
+        /* get manager */
         $em = $this->getDoctrine()->getManager();
         $subject = $em->getRepository('UnsecureBundle:Subject')->findFullOne($subjectId);
         $user = $this->get('unsecure.session')->getUser();
