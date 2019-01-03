@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class AdminController extends Controller
 {
-    /* index action */
+    /** lbdljhld  index action */
     public function indexAction()
     {
         $user = $this->get('unsecure.session')->getUser();
